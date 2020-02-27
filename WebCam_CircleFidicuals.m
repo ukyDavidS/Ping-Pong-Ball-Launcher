@@ -1,3 +1,33 @@
+%{
+Author: Noah Perry
+Description: Creates the integration code which will translate the data
+into usable quanitites that will move the rotational base as well as set an
+angle for fire to hit the target.
+%}
+
+%%Initialize the System
+clear;
+clc;
+Connect_Arduino;
+
+%%Branding and Explain How Everything Works
+disp('+---------------------------+')
+disp('| Mr. Ping''s Pong Team Inc. |')
+disp('|    Ping Pong Launcher     |')
+disp('+---------------------------+')
+disp (' ')
+disp('1. Make sure everything is plugged in.')
+disp('2. Cock the gun by pulling the charging handle back.')
+disp('3. When the light turns green, you''re ready to shoot!')
+
+%%targets are 1.5 inches
+
+%{
+Author: David Sanabria
+Description: Initializes the Webcam and uses it to take an image of the
+target, which will be used for calculations.
+%}
+
 webcamlist
   %%cam=webcam(1);
 preview(cam); %%opens preview

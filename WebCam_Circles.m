@@ -1,10 +1,9 @@
-  %%webcamlist
+  i=0;
+while i < 5 
+%%webcamlist
   %%cam=webcam(1);
 preview(cam); %%opens preview
-for i = 10 %%For loop for preview
-pause (1.0);
-i = i+1;
-end
+pause (3.0);
 
 closePreview(cam); %%closes preview
 image = snapshot(cam); %%Takes picture
@@ -25,6 +24,11 @@ imshow(bw_circles)
 c = viscircles(centers,radii); %%Displays the circles
 
 distance = (0.7889.*(radii.*radii)-(33.576.*radii)+441.02)
+
+pause(5.0);
+i = i+1
+end
+
 
 
 
